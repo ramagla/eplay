@@ -22,7 +22,7 @@ const Product = ({
     <img src={image} alt={title} />
     <Infos>
       {infos.map((info) => (
-        <Tag key={info}>{}infos</Tag>
+        <Tag key={info}>{info}</Tag>
       ))}
     </Infos>
     <Titulo>{title}</Titulo>
