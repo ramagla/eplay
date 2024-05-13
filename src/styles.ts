@@ -1,30 +1,31 @@
 import { createGlobalStyle } from 'styled-components'
 
-export const Cores = {
-  branca: '#eee',
-  preta: '#111',
-  cinza: '#333',
-  verde: '#10ac84',
-  cinzaClaro: '#a3a3a3'
+export const colors = {
+  white: '#eee',
+  black: '#111',
+  gray: '#333',
+  green: '#10AC84',
+  lightGray: '#A3A3A3'
 }
+
 export const breakpoints = {
   desktop: '1024px',
   tablet: '768px'
 }
 
 export const GlobalCss = createGlobalStyle`
-*{
-  margin: 0;
-  padding:0;
-  box-sizing: border-box;
-  font-family: Roboto, sans-serif;
-  list-style: none;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    list-style: none;
   }
 
   body {
-    background-color: ${Cores.preta};
-    color: ${Cores.branca};
-    padding-top:40px;
+    background-color: ${colors.black};
+    color: ${colors.white};
+    padding-top: 40px;
   }
 
   .container {
@@ -36,5 +37,4 @@ export const GlobalCss = createGlobalStyle`
       max-width: 80%;
     }
   }
-
 `

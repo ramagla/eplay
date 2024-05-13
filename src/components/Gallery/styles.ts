@@ -1,18 +1,19 @@
 import styled from 'styled-components'
-import { Cores } from '../../styles'
+import { colors } from '../../styles'
 
 export const Items = styled.ul`
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
 `
+
 export const Action = styled.div`
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0 0.73);
+  background-color: rgba(0, 0, 0, 0.73);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +26,7 @@ export const Item = styled.li`
   cursor: zoom-in;
 
   > img {
-    border: 2px solid ${Cores.branca};
+    border: 2px solid ${colors.white};
     border-radius: 8px;
     width: 150px;
     height: 150px;
@@ -51,7 +52,7 @@ export const Modal = styled.div`
   align-items: center;
   justify-content: center;
 
-  &.visivel {
+  &.is-visible {
     display: flex;
   }
 
@@ -61,7 +62,7 @@ export const Modal = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0 0.73);
+    background-color: rgba(0, 0, 0, 0.73);
   }
 `
 
@@ -78,6 +79,12 @@ export const ModalContent = styled.div`
     h4 {
       font-size: 18px;
       font-weight: bold;
+    }
+
+    img {
+      height: 16px;
+      width: 16px;
+      cursor: pointer;
     }
   }
 
