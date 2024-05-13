@@ -25,7 +25,7 @@ type PurchasePayload = {
       }
       name?: string
       number?: string
-      espires?: {
+      expires?: {
         month: number
         year: number
       }
